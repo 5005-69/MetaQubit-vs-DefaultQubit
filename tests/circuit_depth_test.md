@@ -104,18 +104,27 @@ def run_comparison_test():
 
 if __name__ == "__main__":
     run_comparison_test()
+```
 
+---
 
-📊 Output
+## 📊 Output
+
+```
 [MetaQubit] Mean: 0.992081 ± 0.041848, Time: 3.690664 ± 2.394982 sec
 [Default Qubit] Mean: 0.001360 ± 0.228872, Time: 0.049399 ± 0.012241 sec
+```
 
-📌 Analysis
-✅ MetaQubit successfully maintains a high and stable average output of ~0.99 across 100 runs, even in a circuit with 100 layers of quantum gates.
+---
 
-❌ Default Qubit struggles under circuit depth, with a mean value near zero and high standard deviation, likely due to accumulated quantum noise or decoherence.
+## 📌 Analysis
 
-🕒 MetaQubit is slower, but this is expected due to internal mechanisms that ensure quantum stability and probabilistic control.
+- ✅ **MetaQubit** successfully maintains a **high and stable average output** of ~0.99 across 100 runs, even in a circuit with 100 layers of quantum gates.
+- ❌ **Default Qubit** struggles under circuit depth, with a mean value near zero and high standard deviation, likely due to **accumulated quantum noise or decoherence**.
+- 🕒 MetaQubit is **slower**, but this is expected due to internal mechanisms that ensure quantum stability and probabilistic control.
 
-✅ Conclusion
-MetaQubit exhibits strong resilience to depth-induced instability, a critical property for real-world quantum applications. While the runtime cost is higher, the consistency and fidelity of output make it a powerful foundation for future quantum-enhanced computation.
+---
+
+## ✅ Conclusion
+
+MetaQubit exhibits strong **resilience to depth-induced instability**, a critical property for real-world quantum applications. While the runtime cost is higher, the **consistency and fidelity of output** make it a powerful foundation for future quantum-enhanced computation.
