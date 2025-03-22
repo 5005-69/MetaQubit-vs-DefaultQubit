@@ -113,9 +113,13 @@ def run_all_tests():
 
 if __name__ == "__main__":
     run_all_tests()
+```
 
+---
 
-📊 Output
+## 📊 Output
+
+```
 [1] Decoherence Test:
 MetaQubit: Mean=[0.9924 0.9923 0.9936 0.9942], Std=[0.0273 0.0488 0.0297 0.0363]
 Default Qubit: Mean=[ 0.0058  0.0018 -0.0006  0.0024], Std=[0.0328 0.0321 0.0281 0.0297]
@@ -131,24 +135,28 @@ Default Qubit: Mean=[-0.5073 -0.9950 -0.7863 -0.7238], Std=[0.0276 0.0028 0.0191
 [4] Measurement Stability Test:
 MetaQubit: Mean=0.999854, Std=0.000222
 Default Qubit: Mean=-0.001800, Std=0.999998
+```
 
+---
 
-📌 Analysis
-Test -	MetaQubit -	Default_Qubit
-Decoherence Resistance -	Maintains coherence near 0.99 -	Output collapses near zero
-Noise Resilience -	Near-perfect results despite noise -	Strong output degradation
-Information Capacity -	High response to parametric input -	Saturated or unstable response
-Measurement Stability -	Very stable, low variance -	Near-random output (std ≈ 1)
+## 📌 Analysis
 
-✅ Conclusion
+| Test                          | MetaQubit                              | Default Qubit                         |
+|-------------------------------|----------------------------------------|----------------------------------------|
+| **Decoherence Resistance**    | Maintains coherence near 0.99          | Output collapses near zero             |
+| **Noise Resilience**          | Near-perfect results despite noise     | Strong output degradation              |
+| **Information Capacity**      | High response to parametric input      | Saturated or unstable response         |
+| **Measurement Stability**     | Very stable, low variance              | Near-random output (std ≈ 1)           |
+
+---
+
+## ✅ Conclusion
+
 MetaQubit outperforms the standard backend across all categories, particularly in:
 
-Decoherence mitigation
-
-Noise resistance
-
-Precision of parametric encoding
-
-Output stability
+- **Decoherence mitigation**
+- **Noise resistance**
+- **Precision of parametric encoding**
+- **Output stability**
 
 Its architecture appears to successfully abstract noise, maintain coherence, and interpret input parameters with near-ideal behavior, making it highly suitable for real-world quantum problem-solving.
